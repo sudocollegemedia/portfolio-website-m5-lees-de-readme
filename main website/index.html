@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,47 +16,48 @@
   <body>
     <header class="site-header">
       <a class="wordmark" href="#home">RC<span>.</span></a>
-      <nav aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#work">Selected work</a>
+      <nav aria-label="Hoofdnavigatie">
+        <a href="#about" data-i18n="navAbout">Over mij</a>
+        <a href="#work" data-i18n="navWork">Mijn projecten</a>
       </nav>
-      <a class="header-link" href="#about">Discover more <span>↘</span></a>
+      <a class="header-link" href="#about"><span data-i18n="discover">Ontdek meer</span> <span>↘</span></a>
+      <button class="language-toggle" type="button" aria-pressed="false">English</button>
     </header>
 
     <main>
       <section class="hero" id="home">
         <div class="hero-copy">
-          <p class="eyebrow">Aspiring Fullstack Developer · Portfolio</p>
+          <p class="eyebrow" data-i18n="eyebrow">Aspirant fullstackontwikkelaar · Portfolio</p>
           <h1>Rosario<br /><em>Conti</em></h1>
-          <p class="intro">
-            Front-End Development. HTMl, CSS, Javascript, PHP, SQL, Figma, UI/UX. Aspiring Fullstack Developer. Responsive work organization. Student at Mediacollege <br />
+          <p class="intro" data-i18n="intro">
+            Front-endontwikkeling. HTML, CSS, JavaScript, PHP, SQL, Figma en UI/UX.
+            Aspirant fullstackontwikkelaar. Flexibele werkhouding. Student aan het Mediacollege.
           </p>
-          <a class="text-link" href="#work">Explore my work <span>↓</span></a>
+          <a class="text-link" href="#work"><span data-i18n="explore">Bekijk mijn werk</span> <span>↓</span></a>
         </div>
         <div class="hero-art" aria-hidden="true">
           <span class="art-index">01 / 03</span>
           <span class="art-monogram">R<span>.</span></span>
-          <span class="art-caption">Lorem ipsum<br />dolor sit amet</span>
           <span class="art-orbit"></span>
         </div>
       </section>
 
       <section class="about section-wrap" id="about">
-        <p class="eyebrow">A little about me</p>
+        <p class="eyebrow" data-i18n="aboutEyebrow">Een beetje over mij</p>
         <div>
-          <h2>I'm new to web development!<br/></h2>
+          <h2 data-i18n="aboutTitle">Ik ben nieuw in webontwikkeling!</h2>
           <p class="body-copy">
-            I'm 17 years old and currently studying at Mediacollege. I picked up web development as a hobby and I am currently learning more about it. I have a passion for design and I am always looking for new ways to improve my skills. I am also interested in graphic design and UI/UX design. I am currently learning more about fullstack development and I am looking forward to learning more about back-end development in the future.
+            Ik ben 17 jaar en studeer momenteel aan het Mediacollege. Webontwikkeling is mijn hobby en ik leer er steeds meer over. Ik heb een passie voor design en zoek altijd naar manieren om mijn vaardigheden te verbeteren. Ook ben ik geïnteresseerd in grafisch ontwerp en UI/UX-design. Ik leer momenteel meer over fullstackontwikkeling en kijk ernaar uit om me in de toekomst verder te verdiepen in back-endontwikkeling.
           </p>
           <p>
-            You can contact me at
+            <span data-i18n="contactPrefix">Je kunt contact met me opnemen via</span>
             <a href="mailto:rosarioreiconti@gmail.com">rosarioreiconti@gmail.com</a>
-            or on my
-            <a href="https://www.linkedin.com/in/rosario-conti-71ba97376/" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>.
+            <span data-i18n="contactJoin">of via mijn</span>
+            <a href="https://www.linkedin.com/in/rosario-conti-71ba97376/" target="_blank" rel="noopener noreferrer" data-i18n="linkedin">LinkedIn-profiel</a>.
           </p>
-          <div class="tags" aria-label="Interests">
-            <span>Fullstack development</span><span>Graphic design</span>
-            <span>Soft skills</span><span>UI/UX</span><span>Web design</span><span>Front-end development</span>
+          <div class="tags" aria-label="Interesses">
+            <span data-i18n="tagFullstack">Fullstackontwikkeling</span><span data-i18n="tagGraphic">Grafisch ontwerp</span>
+            <span data-i18n="tagSoft">Soft skills</span><span>UI/UX</span><span data-i18n="tagWeb">Webdesign</span><span data-i18n="tagFrontend">Front-endontwikkeling</span>
           </div>
         </div>
       </section>
@@ -64,34 +65,34 @@
       <section class="work section-wrap" id="work">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">The things I make</p>
-            <h2>Selected <em>work</em></h2>
+            <p class="eyebrow" data-i18n="workEyebrow">Wat ik maak</p>
+            <h2><span data-i18n="workTitle">Geselecteerd</span> <em data-i18n="workTitleEm">werk</em></h2>
           </div>
-          <span class="work-count">Projects · 01—04</span>
+          <span class="work-count"><span data-i18n="projectLabel">Projecten</span> · 01—04</span>
         </div>
         <div class="project-grid">
           <a class="project-card card-one" href="projects%20under%20website/kalender/index.html" aria-label="Kalender">
             <span class="project-number">01</span>
             <span class="project-mark mark-one">Aa</span>
-            <span class="project-info"><strong>Kalender</strong><small>Een simpele kalender voor mijn Javascript project.</small></span>
+            <span class="project-info"><strong>Kalender</strong><small data-i18n="project1">Een eenvoudige kalender voor mijn JavaScript-project.</small></span>
             <span class="project-arrow">↗</span>
           </a>
           <a class="project-card card-two" href="projects%20under%20website/social%20media/index.html" aria-label="Social Media">
             <span class="project-number">02</span>
             <span class="project-mark mark-two">✳</span>
-            <span class="project-info"><strong>Social Media</strong><small>Social Media opdracht, een opdracht die laat zien hoe ik met Javascript werk.</small></span>
+            <span class="project-info"><strong>Social Media</strong><small data-i18n="project2">Een opdracht die laat zien hoe ik met JavaScript werk.</small></span>
             <span class="project-arrow">↗</span>
           </a>
           <a class="project-card card-three" href="projects%20under%20website/websiteincludeme/index.html" aria-label="Include Me">
             <span class="project-number">03</span>
             <span class="project-mark mark-three">R—</span>
-            <span class="project-info"><strong>Include Me</strong><small>Een opdracht voor een klant die disabled-friendly is en meestal gaat over design.</small></span>
+            <span class="project-info"><strong>Include Me</strong><small data-i18n="project3">Een ontwerpopdracht voor een klant, met aandacht voor toegankelijkheid voor mensen met een beperking.</small></span>
             <span class="project-arrow">↗</span>
           </a>
           <a class="project-card card-four" href="https://trello.com/b/l99BFNml/duurzaam-huis-trello" target="_blank" rel="noopener noreferrer" aria-label="Trello Duurzaam Huis">
             <span class="project-number">04</span>
             <span class="project-mark mark-four">◒</span>
-            <span class="project-info"><strong>Trello Duurzaam Huis</strong><small>Trello opdracht voor een duurzaam huis project die mijn soft skills in SCRUM laat zien. https://trello.com/b/l99BFNml/duurzaam-huis-trello</small></span>
+            <span class="project-info"><strong>Trello Duurzaam Huis</strong><small data-i18n="project4">Een Trello-opdracht voor een project over een duurzaam huis, waarin ik mijn soft skills en Scrum laat zien.</small></span>
             <span class="project-arrow">↗</span>
           </a>
         </div>
@@ -100,7 +101,61 @@
 
     <footer>
       <span>Rosario Conti <span class="footer-dot">©</span> 2026</span>
-      <a href="#home">Back to top ↑</a>
+      <a href="#home" data-i18n="backToTop">Terug naar boven ↑</a>
     </footer>
+    <script>
+      const translations = {
+        en: {
+          navAbout: "About me", navWork: "My projects", discover: "Discover more",
+          eyebrow: "Aspiring Fullstack Developer · Portfolio",
+          intro: "Front-end development. HTML, CSS, JavaScript, PHP, SQL, Figma and UI/UX. Aspiring full-stack developer. Flexible and organized. Student at Mediacollege.",
+          explore: "Explore my work", aboutEyebrow: "A little about me",
+          aboutTitle: "I'm new to web development!",
+          aboutText: "I'm 17 years old and currently studying at Mediacollege. I picked up web development as a hobby and I'm learning more about it all the time. I have a passion for design and am always looking for ways to improve my skills. I'm also interested in graphic design and UI/UX design. I'm currently learning more about full-stack development and look forward to exploring back-end development further in the future.",
+          contactPrefix: "You can contact me at", contactJoin: "or through my",
+          linkedin: "LinkedIn profile", tagFullstack: "Full-stack development",
+          tagGraphic: "Graphic design", tagSoft: "Soft skills", tagWeb: "Web design",
+          tagFrontend: "Front-end development", workEyebrow: "Things I make",
+          workTitle: "Selected", workTitleEm: "work", projectLabel: "Projects",
+          project1: "A simple calendar for my JavaScript project.",
+          project2: "An assignment showcasing how I work with JavaScript.",
+          project3: "A design assignment for a client, with a focus on accessibility for people with disabilities.",
+          project4: "A Trello assignment for a sustainable house project, showcasing my soft skills and Scrum.",
+          backToTop: "Back to top ↑"
+        },
+        nl: {
+          navAbout: "Over mij", navWork: "Mijn projecten", discover: "Ontdek meer",
+          eyebrow: "Aspirant fullstackontwikkelaar · Portfolio",
+          intro: "Front-endontwikkeling. HTML, CSS, JavaScript, PHP, SQL, Figma en UI/UX. Aspirant fullstackontwikkelaar. Flexibele werkhouding. Student aan het Mediacollege.",
+          explore: "Bekijk mijn werk", aboutEyebrow: "Een beetje over mij",
+          aboutTitle: "Ik ben nieuw in webontwikkeling!",
+          aboutText: "Ik ben 17 jaar en studeer momenteel aan het Mediacollege. Webontwikkeling is mijn hobby en ik leer er steeds meer over. Ik heb een passie voor design en zoek altijd naar manieren om mijn vaardigheden te verbeteren. Ook ben ik geïnteresseerd in grafisch ontwerp en UI/UX-design. Ik leer momenteel meer over fullstackontwikkeling en kijk ernaar uit om me in de toekomst verder te verdiepen in back-endontwikkeling.",
+          contactPrefix: "Je kunt contact met me opnemen via", contactJoin: "of via mijn",
+          linkedin: "LinkedIn-profiel", tagFullstack: "Fullstackontwikkeling",
+          tagGraphic: "Grafisch ontwerp", tagSoft: "Soft skills", tagWeb: "Webdesign",
+          tagFrontend: "Front-endontwikkeling", workEyebrow: "Wat ik maak",
+          workTitle: "Geselecteerd", workTitleEm: "werk", projectLabel: "Projecten",
+          project1: "Een eenvoudige kalender voor mijn JavaScript-project.",
+          project2: "Een opdracht die laat zien hoe ik met JavaScript werk.",
+          project3: "Een ontwerpopdracht voor een klant, met aandacht voor toegankelijkheid voor mensen met een beperking.",
+          project4: "Een Trello-opdracht voor een project over een duurzaam huis, waarin ik mijn soft skills en Scrum laat zien.",
+          backToTop: "Terug naar boven ↑"
+        }
+      };
+      document.querySelector(".body-copy").dataset.i18n = "aboutText";
+      const languageButton = document.querySelector(".language-toggle");
+      languageButton.addEventListener("click", () => {
+        const language = document.documentElement.lang === "nl" ? "en" : "nl";
+        document.documentElement.lang = language;
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+          element.textContent = translations[language][element.dataset.i18n];
+        });
+        document.querySelector("nav").setAttribute("aria-label", language === "nl" ? "Hoofdnavigatie" : "Main navigation");
+        document.querySelector(".tags").setAttribute("aria-label", language === "nl" ? "Interesses" : "Interests");
+        languageButton.textContent = language === "nl" ? "English" : "Nederlands";
+        languageButton.setAttribute("aria-pressed", String(language === "en"));
+        languageButton.setAttribute("aria-label", language === "nl" ? "Switch to English" : "Schakel naar Nederlands");
+      });
+    </script>
   </body>
 </html>

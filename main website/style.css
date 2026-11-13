@@ -30,6 +30,17 @@ nav a, .header-link, .text-link, footer { font-size: 11px; }
 nav a, .header-link, footer a { transition: color .2s ease; }
 nav a:hover, .header-link:hover, footer a:hover { color: var(--purple); }
 .header-link span, .text-link span { color: var(--purple); margin-left: 8px; }
+.language-toggle {
+  padding: 8px 11px;
+  border: 1px solid var(--purple);
+  border-radius: 20px;
+  background: transparent;
+  color: var(--purple);
+  font: inherit;
+  font-size: 10px;
+  cursor: pointer;
+}
+.language-toggle:hover, .language-toggle:focus-visible { background: var(--purple); color: #fff; }
 .hero {
   min-height: 570px;
   padding: 64px 12% 52px;
